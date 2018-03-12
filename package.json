@@ -1,0 +1,18 @@
+{
+  "name": "graphql_playground",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon src/index.js --presets --exec babel-node es2015,stage-2"
+  },
+  "description": "For playing around with graphql",
+  "main": "src/index.js",
+  "author": "Rasmus Bergström",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.17.1"
+  }
+}
