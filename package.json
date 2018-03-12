@@ -2,7 +2,9 @@
   "name": "graphql_playground",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon lib/index.js --presets --exec babel-node es2015,stage-2"
+    "start": "nodemon lib/index.js --presets --exec babel-node es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js"
   },
   "description": "For playing around with graphql",
   "main": "lib/index.js",
