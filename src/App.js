@@ -1,8 +1,15 @@
 import express from 'express';
+import graphqlHTTP from "express-graphql";
+import { schema } from "./Schema";
+import { PORT } from "./Config";
 
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
+const app = express();
 
-console.log('Server running at http://127.0.0.1:1337/');
+app.use("*", graphqlHTTP({
+  schema,
+  graphiql: true,
+}));
+
+app.listen(PORT);
+
+console.log(`Server running at http://localhost:${PORT}/`);
