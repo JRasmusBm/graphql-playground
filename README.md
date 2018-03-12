@@ -6,3 +6,7 @@ try it out myself. This repository is to facilitate experimentation with
 various features withing GraphQL, in order to increase my own understanding
 with the technology.
 
+## Useful sources
+
+[babel/example-node-server](https://github.com/babel/example-node-server)
+
