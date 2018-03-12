@@ -1,4 +1,4 @@
-import http from 'http';
+import express from 'express';
 
 http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
